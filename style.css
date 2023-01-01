@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-blue: #3d036d;
+  --color-pink: #e700cf;
+}
+
+body {
+  background: #0e021e;
+}
+
+button {
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s all ease-in;
+  cursor: pointer;
+  outline: none;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  margin: 30px 0;
+  padding: 0 10px;
+}
+/* NAVBAR */
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-blue);
+}
+
+.nav__logo {
+  color: var(--color-white);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav__logo span {
+  color: var(--color-pink);
+}
+
+.share-btn {
+  border: 1px solid transparent;
+  color: var(--color-pink);
+  background: var(--color-white);
+}
+
+.share-btn:hover {
+  border-color: var(--color-white);
+  background: transparent;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+textarea {
+  background: #dddddd;
+  transition: 0.3s all linear;
+  outline: none;
+  resize: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  width: 400px;
+  height: 300px;
+  margin: 8px 5px;
+}
+
+textarea:focus {
+  box-shadow: 0 0 10px var(--color-pink);
+  border-color: var(--color-pink);
+  background: var(--color-white);
+}
+/* FORM BUTTONS */
+.btn-group {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  margin: 0 5px;
+}
+
+.translate-btn {
+  background: var(--color-blue);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+
+.translate-btn:hover{
+    border-color: var(--color-pink);
+}
+
+.change-btn {
+  border: 1px solid transparent;
+  color: var(--color-pink);
+  background: var(--color-white);
+}
+
+.change-btn:hover {
+    border-color: var(--color-white);
+    background: transparent;
+  }
+  
+
+/* MEDIA */
+@media (max-width: 420px) {
+  textarea {
+    width: 100%;
+  }
+}
